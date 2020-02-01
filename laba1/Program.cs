@@ -10,7 +10,7 @@ namespace laba1
     {
         static void Main(string[] args)
         {
-            string path = @".\version";
+            string path = @"..\..\..\..\version";
             Directory.CreateDirectory("Log");
             using (StreamReader sr = new StreamReader(path))
             {
@@ -34,7 +34,7 @@ namespace laba1
                 }
                 MyLog.log(s);
             }
-            catch (VasikhinException e)
+            catch (EfimovException e)
             {
                 MyLog.log("Ошибка: " + e.Message);
             }
